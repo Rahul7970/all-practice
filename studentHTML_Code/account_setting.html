@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nav menu</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/esm/popper.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+  <!-- <link rel="stylesheet" href="./css/main_Navbar.css">
+  <link rel="stylesheet" href="./css/main.css"> -->
+  <link rel="stylesheet" href="./css/main_Navbar.css">
+  <link rel="stylesheet" href="./css/main.css">
+
+</head>
+
+<body>
+  <div class="page-wrapper chiller-theme toggled">
+    <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+      <i class="fas fa-bars"></i>
+    </a>
+    <nav id="sidebar" class="sidebar-wrapper">
+      <div class="sidebar-content">
+        <div class="sidebar-brand">
+          <a href="#">HTML Tutorial</a>
+          <div id="close-sidebar">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+        <div class="sidebar-header">
+          <div class="user-pic">
+            <img class="img-responsive img-rounded" src="./Image/images.png"
+              alt="User picture">
+          </div>
+          <div class="user-info">
+            <span class="user-name">Gananamani College
+              <!-- <strong>Technology</strong> -->
+            </span>
+            <span class="user-role">of Technology</span>
+            <span class="user-status">
+              <i class="fa fa-circle"></i>
+              <span>Online</span>
+            </span>
+          </div>
+        </div>
+        <!-- sidebar-header  -->
+        <div class="sidebar-search">
+          <div>
+            <div class="input-group">
+              <input type="text" class="form-control search-menu" placeholder="Search...">
+              <div class="input-group-append">
+                <span class="input-group-text">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- sidebar-search  -->
+        <div class="sidebar-menu">
+          <ul>
+            <!-- <li class="header-menu">
+                        <span>General</span>
+                      </li> -->
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-tachometer"></i>
+                <span>Dashboard</span>
+                <!-- <span class="badge badge-pill badge-warning">New</span> -->
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="management.html">Management</a>
+                  </li>
+                  <li>
+                    <a href="admin.html">Admin</a>
+                  </li>
+                  <li>
+                    <a href="student.html">Student</a>
+                  </li>
+                  <li>
+                    <a href="Parent.html">Parent</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-shopping-cart"></i>
+                <span>Student</span>
+                <!-- <span class="badge badge-pill badge-danger">3</span> -->
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="#">All Student</a>
+                  </li>
+                  <li>
+                    <a href="#">Student Details</a>
+                  </li>
+                  <li>
+                    <a href="admit_form.html">Admit Form</a>
+                  </li>
+                  <li>
+                    <a href="student_promotion.html">Student Promotion</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-user"></i>
+                <span>Teachers</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="#">All Teachers</a>
+                  </li>
+                  <li>
+                    <a href="./Teacher_detail.html">Teachers Details</a>
+                  </li>
+                  <li>
+                    <a href="add-teacher.html">Add Teachers</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-users"></i>
+                <span>Parent</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="./Parent.html">Parent</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-list-ul"></i>
+                <span>Library</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="#">All Books</a>
+                  </li>
+                  <li>
+                    <a href="add-book.html">Add Books</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-shield"></i>
+                <span>Account</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="./fee_collection.html">Fees Collection</a>
+                  </li>
+                  <li>
+                    <a href="student-payment-info.html">Create Student Payment</a>
+                  </li>
+                  <li>
+                    <a href="all-expense.html">All Expense</a>
+                  </li>
+                  <li>
+                    <a href="#">Add Expense</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-users"></i>
+                <span>Class</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="#">All Class</a>
+                  </li>
+                  <li>
+                    <a href="add-new-class.html">Add New Class</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-book"></i>
+                <span>Subject</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="subject.html">Subject</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-calendar"></i>
+                <span>Class Routine</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="class_routine.html">Class Routine</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-asterisk"></i>
+                <span>Attendence</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="attendance.html">Attendence</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-graduation-cap"></i>
+                <span>Exam</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="exam_schedule.html">Exam Schedule</a>
+                  </li>
+                  <li>
+                    <a href="exam_grade.html">Exam Grades</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-truck"></i>
+                <span>Transport</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="transport.html">Transport</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-building"></i>
+                <span>Hostel</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="hostel.html">Hostel</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-exclamation-circle"></i>
+                <span>Notice</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="notice.html">Notice</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-commenting"></i>
+                <span>Message</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="send_message.html">Send Message</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-desktop"></i>
+                <span>UI Elements</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="#"></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-map-marker"></i>
+                <span>Map</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="#"></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-cog"></i>
+                <span>Account</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="account_setting.html"> Account Setting</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="page-content">
+      <div class="container-fluid">
+
+        <!-- keep ur all content from here -->
+        <!-- below is sample code -->
+        <!-- <div class="row"> -->
+        <div class="row">
+          <div class="col-lg-4">
+            <div id="formBlock" class="formBlock pb-3 mb-3 bg-light">
+              <div class="headSectionNotice row ">
+                <h4>Account Setting</h4>
+                <div style="position: absolute; top: 5px; right:0px;">
+                  <i class="fas fa-angle-down downBtn"></i>
+                  <i class="fas fa-sync syncBtn"></i>
+                  <i class="fa fa-remove removeBtn"></i>
+                </div>
+              </div>
+              <form action="" id="formSection" class="formSection pt-3 pl-3">
+                <div>
+                  <div class="">
+                    <div class="">
+                      <label id="lblFormName" for="inputFormName">First name</label>
+                      <input type="text" id="formInputName">
+                    </div>
+                    <div class="">
+                      <label id="lblFormName" for="inputFormName">Last name</label>
+                      <input type="text" id="formInputName">
+                    </div>
+                    <div class="">
+                      <label id="lblFormName" for="inputFormName">Address</label>
+                      <input type="text" id="formInputName">
+                    </div>
+                    <div class="">
+                      <label id="lblFormName" for="inputFormName">Phone</label>
+                      <input type="tel" id="formInputName">
+                    </div>
+                    <div class="">
+                      <label id="lblFormName" for="inputFormName">Email</label>
+                      <input type="email" id="formInputName">
+                    </div>
+                    <div class="">
+                      <label id="lblFormName" for="inputFormName">Scool code</label>
+                      <input type="text" id="formInputName">
+                    </div>
+                    <div class="">
+                      <label id="lblFormName" for="inputFormName">Session</label>
+                      <input type="text" id="formInputName">
+                    </div>
+                    <div class="">
+                      <div class="form-group">
+                        <label id="lblFormName" for="formInputName">Language</label>
+                        <select class="" id="formInputName">
+                          <option></option>
+                          <option>A</option>
+                          <option>B</option>
+                          <option>C</option>
+                          <option>D</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="">
+                      <label id="lblFormName" for="inputFormName">Joining Date</label>
+                      <input type="date" id="formInputName">
+                    </div>
+                    <div class="">
+                      <div class="box Upload_section">
+                        <input style="visibility: hidden;" type="file" name="file-5[]" id="file-5"
+                          class="inputfile inputfile-4" data-multiple-caption="{count} files selected" multiple="">
+                        <label for="file-5">
+                          <figure><svg xmlns="http://www.w3.org/2000/svg" width="" height="25" viewBox="0 0 20 17">
+                              <path
+                                d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z">
+                              </path>
+                            </svg></figure>
+                        </label>
+                        <span>Upload student photo</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <button type="submit" class="formCommonButton save_btn">Save</button>
+                  <button type="reset" class="formCommonButton reset_btn">Reset</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="noticeBoard mediaBottomMar01 p-3">
+              <div class="row" style="position: relative;">
+                <div class="col-lg-6">
+                  <h4 style="height: 20px;">User Profile</h4>
+                </div>
+                <!-- <div class="col-lg-4"> -->
+                <div class="iconPosition" style="position: absolute; top: 0px; right: 15px;">
+                  <i class="fas fa-angle-down downBtn"></i>
+                  <i class="fas fa-sync syncBtn"></i>
+                  <i class="fa fa-remove removeBtn"></i>
+                </div>
+                <!-- </div> -->
+              </div>
+              <hr>
+              <div class="row p-3 bg-white">
+                <div class="col-lg-5">
+                  <img class="cardimg"
+                    src="https://cdn4.iconfinder.com/data/icons/circle-avatars-1/128/050_girl_avatar_profile_woman_suit_student_officer-2-512.png"
+                    alt="">
+                  <div class="row rowicon">
+                    <div class="col-lg-4 img_botton_icon">
+                      <div><i class="fa fa-eye icon"></i></div>
+                      <div><i class="fa fa-file-pdf icon"></i></div>
+                      <div><i class="fa fa-download icon"></i></div>
+                      <div> <i class="fa fa-share-alt icon"></i></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-7">
+                  <table>
+                    <tr>
+                      <td id="Name" class="m-3">Name:</td>
+                      <td id="stuDetailRequre" class="stuDetailRequre">Ashu Hassn</td>
+                    </tr>
+                    <tr>
+                      <td id="gender" class="m-3">Gender :</td>
+                      <td id="Female" class="stuDetailRequre">Female</td>
+                    </tr>
+                    <tr>
+                      <td id="Roll" class="m-3">Roll :</td>
+                      <td id="" class="stuDetailRequre"># 2091</td>
+                    </tr>
+                    <tr>
+                      <td class="m-3">Admission ID :</td>
+                      <td class="stuDetailRequre"># 1250</td>
+                    </tr>
+                    <tr>
+                      <td class="m-3">Admission Date :</td>
+                      <td class="stuDetailRequre">12/12/2022</td>
+                    </tr>
+                    <tr>
+                      <td class="m-3">class :</td>
+                      <td class="stuDetailRequre">2</td>
+                    </tr>
+                    <tr>
+                      <td class="m-3">Section :</td>
+                      <td class="stuDetailRequre">A</td>
+                    </tr>
+                    <tr>
+                      <td class="m-3">Name :</td>
+                      <td class="stuDetailRequre">Ashu Hassn</td>
+                    </tr>
+                    <tr>
+                      <td class="m-5">Gender :</td>
+                      <td class="stuDetailRequre">Female</td>
+                    </tr>
+                    <tr>
+                      <td class="m-5">Roll:</td>
+                      <td class="stuDetailRequre"># 2091</td>
+                    </tr>
+                    <tr>
+                      <td class="m-5">Admission ID :</td>
+                      <td class="stuDetailRequre"># 1250</td>
+                    </tr>
+                    <tr>
+                      <td class="m-5">Admission ID :</td>
+                      <td class="stuDetailRequre"># 1250</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
+
+        <!-- keep ur all content from here -->
+
+      </div>
+    </main>
+
+
+
+
+
+    <script>
+      $(".sidebar-dropdown > a").click(function () {
+        $(".sidebar-submenu").slideUp(200);
+        if (
+          $(this)
+            .parent()
+            .hasClass("active")
+        ) {
+          $(".sidebar-dropdown").removeClass("active");
+          $(this)
+            .parent()
+            .removeClass("active");
+        } else {
+          $(".sidebar-dropdown").removeClass("active");
+          $(this)
+            .next(".sidebar-submenu")
+            .slideDown(200);
+          $(this)
+            .parent()
+            .addClass("active");
+        }
+      });
+
+      $("#close-sidebar").click(function () {
+        $(".page-wrapper").removeClass("toggled");
+      });
+      $("#show-sidebar").click(function () {
+        $(".page-wrapper").addClass("toggled");
+      });
+
+
+    </script>
+    <script src="./JS/"></script>
+</body>
+
+</html>

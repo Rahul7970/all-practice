@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>slider temp</title>
+  <link rel="stylesheet" href="./css/main_Navbar.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/esm/popper.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"> -->
+
+  <style>
+  </style>
+</head>
+
+<body>
+  <div class="page-wrapper chiller-theme toggled">
+    <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+      <i class="fas fa-bars"></i>
+    </a>
+    <nav id="sidebar" class="sidebar-wrapper">
+      <div class="sidebar-content">
+        <div class="sidebar-brand">
+          <a href="#">HTML Tutorial</a>
+          <div id="close-sidebar">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+        <div class="sidebar-header">
+          <div class="user-pic">
+            <img class="img-responsive img-rounded"
+              src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg"
+              alt="User picture">
+          </div>
+          <div class="user-info">
+            <span class="user-name">Jhon
+              <strong>Smith</strong>
+            </span>
+            <span class="user-role">Administrator</span>
+            <span class="user-status">
+              <i class="fa fa-circle"></i>
+              <span>Online</span>
+            </span>
+          </div>
+        </div>
+        <!-- sidebar-header  -->
+        <div class="sidebar-search">
+          <div>
+            <div class="input-group">
+              <input type="text" class="form-control search-menu" placeholder="Search...">
+              <div class="input-group-append">
+                <span class="input-group-text">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- sidebar-search  -->
+        <div class="sidebar-menu">
+          <ul>
+            <!-- <li class="header-menu">
+                  <span>General</span>
+                </li> -->
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-tachometer"></i>
+                <span>Dashboard</span>
+                <!-- <span class="badge badge-pill badge-warning">New</span> -->
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="#">Admin</a>
+                  </li>
+                  <li>
+                    <a href="#">Student</a>
+                  </li>
+                  <li>
+                    <a href="#">Parent</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-shopping-cart"></i>
+                <span>Student</span>
+                <!-- <span class="badge badge-pill badge-danger">3</span> -->
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="#">All Student</a>
+                  </li>
+                  <li>
+                    <a href="#">Student Details</a>
+                  </li>
+                  <li>
+                    <a href="#">Admit Form</a>
+                  </li>
+                  <li>
+                    <a href="#">Student Promotion</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-user"></i>
+                <span>Teachers</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="#">All Teachers</a>
+                  </li>
+                  <li>
+                    <a href="#">Teachers Details</a>
+                  </li>
+                  <li>
+                    <a href="#">Add Teachers</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-users"></i>
+                <span>Parent</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="#"></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-list-ul"></i>
+                <span>Library</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="#">All Books</a>
+                  </li>
+                  <li>
+                    <a href="#">Add Books</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-shield"></i>
+                <span>Account</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="#">Fees Collection</a>
+                  </li>
+                  <li>
+                    <a href="#">Create Student Payment</a>
+                  </li>
+                  <li>
+                    <a href="#">All Expense</a>
+                  </li>
+                  <li>
+                    <a href="#">Add Expense</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-users"></i>
+                <span>Class</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="#">All Class</a>
+                  </li>
+                  <li>
+                    <a href="#">Add New Class</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-book"></i>
+                <span>Subject</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="#"></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-calendar"></i>
+                <span>Class Routine</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="#"></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-asterisk"></i>
+                <span>Attendence</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="#"></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-graduation-cap"></i>
+                <span>Exam</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="#">Exam Schedule</a>
+                  </li>
+                  <li>
+                    <a href="#">Exam Grades</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-truck"></i>
+                <span>Transport</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="#"></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-building"></i>
+                <span>Hostel</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="#"></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-exclamation-circle"></i>
+                <span>Notice</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="#">Notice</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-commenting"></i>
+                <span>Message</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="#">Send Message</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-desktop"></i>
+                <span>UI Elements</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="#"></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-map-marker"></i>
+                <span>Map</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="#"></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-cog"></i>
+                <span>Account</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="#"></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- sidebar-wrapper  -->
+
+       <style>
+        /* .headStrip{
+            position: absolute;
+            top: 0;
+        } */
+       </style>
+
+    <!-- content -->
+         
+    <main class="page-content">
+      <div class="container-fluid">
+
+        <!-- keep ur all content from here -->
+        <!-- below is sample code -->
+        
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="#">Logo</a>
+          <h6>Welcome to Gnanamani College of Technology <spam class="text-muted">Student Management system</spam>
+          </h6>
+          <form class="form-inline" action="/action_page.php">
+            <input class="form-control ml-5 mr-2" type="text" placeholder="Search....">
+            <button class="btn btn-success mr-2" type="submit">Search</button>
+          </form>
+          <div class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle mr-2" href="http://example.com" id="dropdown09" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false"><span class="flag-icon flag-icon-us"> </span>
+              English</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown09">
+              <a class="dropdown-item" href="#fr"><span class="flag-icon flag-icon-fr"> </span> French</a>
+              <a class="dropdown-item" href="#it"><span class="flag-icon flag-icon-it"> </span> Italian</a>
+              <a class="dropdown-item" href="#ru"><span class="flag-icon flag-icon-ru"> </span> Russian</a>
+            </div>
+          </div>
+          <a href="" class="text-dark mr-2">
+            <i class="fas fa-envelope fa-2x"></i>
+            <span class="badge rounded-pill badge-notification bg-danger">9</span>
+          </a>
+          <a href="" class="text-dark">
+            <i class="fa fa-bell fa-2x"></i>
+            <span class="badge rounded-pill badge-notification bg-danger">9</span>
+          </a>
+        </nav>
+
+        <!-- keep ur all content from here -->
+
+      </div>
+    </main>
+    <!-- page-content" -->
+
+
+
+  </div>
+  <!-- page-wrapper -->
+
+  <script>
+    $(".sidebar-dropdown > a").click(function () {
+      $(".sidebar-submenu").slideUp(200);
+      if (
+        $(this)
+          .parent()
+          .hasClass("active")
+      ) {
+        $(".sidebar-dropdown").removeClass("active");
+        $(this)
+          .parent()
+          .removeClass("active");
+      } else {
+        $(".sidebar-dropdown").removeClass("active");
+        $(this)
+          .next(".sidebar-submenu")
+          .slideDown(200);
+        $(this)
+          .parent()
+          .addClass("active");
+      }
+    });
+
+    $("#close-sidebar").click(function () {
+      $(".page-wrapper").removeClass("toggled");
+    });
+    $("#show-sidebar").click(function () {
+      $(".page-wrapper").addClass("toggled");
+    });
+  </script>
+</body>
+
+</html>

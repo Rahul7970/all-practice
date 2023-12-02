@@ -1,0 +1,916 @@
+:root{
+  --facebook:linear-gradient(to left, rgb(100, 102, 204), rgb(45, 49, 82));
+  --Twitter:linear-gradient(to left, rgb(139, 176, 223), rgb(12, 140, 245));
+  --Red:linear-gradient(to left, rgb(235, 19, 19), rgb(205, 11, 11));
+  --Linkedin:linear-gradient(to left, rgb(43, 128, 238), rgb(29, 85, 144));
+  --Green:linear-gradient(to left, rgb(78, 255, 78), rgb(50, 172, 39));
+  --DarkRed: rgb(255, 0, 0);
+  --Yellow: rgb(255, 217, 0);
+  --Blue: blue;
+  --DarkGreen:green;
+  --Black:black;
+  --input_color: rgb(198, 235, 135);
+  --saveBtnColor:rgb(255, 221, 0);
+  --resetbtnColor:rgb(23, 23, 81);
+
+  --theme1_bodyColor:  linear-gradient(to bottom right, rgb(0,22,42), rgb(2,83,141),rgb(105, 157, 235),rgb(129,123,240),rgb(35,105,153));
+  --theme1_inputColor: #c9c8c8;
+  --theme1_Color: linear-gradient(to bottom right, rgb(0,22,42), rgb(2,83,141),rgb(76, 70, 181),rgb(35,105,153));
+  --theme1_Color_Nave: rgb(0, 0, 0);
+  --theme1_Color_text: rgb(253, 250, 250);
+
+
+
+  --theme2_bodyColor:  linear-gradient(to left, #1E2761, #240412);
+  --theme2_inputColor:  #408EC6;
+  --theme2_Color:  linear-gradient(to left, #1E2761, #240412);
+
+  --theme3_bodyColor: #234E70;
+  --theme3_inputColor: #240412;
+  --theme3_Color: #6d805b;
+}
+
+.form_main_Section{
+  background-color: var(--theme1_bodyColor);
+}
+
+/* ----------------------------------------------------- */
+/* ------------------cards insta,fb..------------------- */
+ .cardTop {
+  display: inline-block;
+  border-right: 2px solid white;
+  width: 50%;
+  height: 50px;
+  text-align: center;
+}
+
+.topCardText1 {
+  color: white;
+  font-size: 14px;
+}
+
+.topCardText2 {
+  width: 50%;
+  color: white;
+  font-weight: bold 5px;
+  font-size: 30px;
+  padding-left: 10px;
+}
+.cardTopCss1{
+  height: 100px;
+  background-image: var(--Green);
+}
+.cardTopCss2{
+  height: 100px;
+  background-color: var(--DarkRed);
+}
+.cardTopCss3{
+  height: 100px;
+  background-image: var(--Linkedin);
+}
+.cardTopCss4{
+  height: 100px;
+  background-color: var(--Yellow);
+  padding: 25px;
+}
+
+
+.bottomCard {
+  display: inline-block;
+  width: 50%;
+  margin: 10px 0px;
+  border-right: 2px solid white;
+} 
+.mediaBottomMar{
+  margin-bottom: 10px;
+  padding: 25px;
+}
+.mediaBottomMar02{
+  margin-bottom: 10px;
+  padding: 20px;
+}
+.iconCard{
+  display: block;
+  color: white;
+}
+.bottomCardCss1{
+  height: 100px;
+  background-image: var(--facebook);
+}
+.bottomCardCss2{
+  height: 100px;
+  background-image: var(--Twitter);
+}
+.bottomCardCss3{
+  height: 100px;
+  background-image: var(--Red);
+}
+.bottomCardCss4{
+  height: 100px;
+  background-image: var(--Linkedin);
+}
+  /* ------------------------------------------------------------ */
+  /* ----------------------children------------------------------- */
+.mainBlock {
+  background-color: rgb(245, 241, 241);
+  /* padding: 20px; */
+  /* padding-left: 20px; */
+}
+
+.border_bottom_card {
+  border-bottom: 1px solid rgb(179, 176, 176);
+  box-sizing: border-box;
+  padding-top: 5px;
+}
+
+.cardimg {
+  padding-top: 5px;
+  width: 140px;
+  height: 150px;
+}
+
+.stdDetail {
+  display: block;
+  padding-bottom: 5px;
+}
+
+.stuDetail {
+  padding-bottom: 7px;
+}
+.mainrow1 {
+  padding-top: 10px;
+}
+
+.heading{
+  position: relative;
+  padding-left: 10px;
+  /* padding-top: 5px; */
+}
+
+.logoblock {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  
+}
+
+.fontcolor1,
+.fontcolor2,
+.fontcolor1 {
+  font-size: 15px;
+
+}
+
+.fontcolor1 {
+  color: chocolate;
+}
+
+.fontcolor2 {
+  color: green;
+}
+
+.fontcolor3 {
+  color: darkred;
+}
+
+.flex-container {
+  display: flex;
+
+}
+.icon {
+  background-color: antiquewhite;
+  border-radius: 3px;
+  width: 30px;
+  height: 30px;
+  margin: 6px;
+  margin-left: 0px;
+  padding-top: 7px;
+}
+
+.img_botton_icon {
+  display: flex;
+
+}
+
+.rowicon {
+  text-align: center;
+}
+.containerBlock{
+  padding-top: 10px;
+  /* margin-left: 5px; */
+}
+.mainBlock1{
+  
+  background-color: rgb(245, 241, 241);
+  /* padding: 20px; */
+  /* padding-left: 20px; */
+}
+
+.children2{
+    margin-top: -60px;
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .children2{
+      margin-top: 20px;
+  }
+  } 
+
+  .stuDetailRequre{
+    font-weight: bolder;
+    padding: 10px;
+    padding-left: 50px;
+  
+  }
+ /* --------------------------------------------------- */
+/* ---------------------notice board-------------------- */
+
+.scrollbarNotice {
+  /* float: left; */
+  height: 180px;
+  max-width: 700px;
+  background: rgb(255, 255, 255);
+  overflow-y: scroll;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+.noticeBoard{
+  box-shadow: 1px 1px 5px rgb(235, 229, 229);
+  /* border: 1px solid gray; */
+  padding: 10px;
+  background-color: rgb(250, 252, 252);
+}
+
+/* Notice with form 29 */
+
+.scrollbarNoticeBoard{
+  float: left;
+  height: 500px;
+  width:100%;
+  background: rgb(255, 255, 255);
+  overflow-y: scroll;
+  margin-bottom: 5px;
+
+}
+.headSectionNotice{
+  border-bottom: 1px solid gray ;
+  height: 50px;
+  margin:0px 20px;
+  position: relative;
+}
+
+/* -------------------------------------------------------- */
+/* ---------------------recent activivty--------------------- */
+.scroll {
+  height: 350px;
+
+  overflow: hidden;
+
+}
+
+.scroll:hover {
+  overflow-y: auto;
+ 
+}
+
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+
+}
+
+ul.timeline:before {
+  content: ' ';
+  background: #d4d9df;
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  height: 100%;
+  z-index: 400;
+ 
+}
+
+ul.timeline>li {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+ul.timeline>li:before {
+  content: ' ';
+  background: white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #22c0e8;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 400;
+ 
+}
+
+.close-button {
+  position: relative;
+  float: right;
+  display: inline;
+  margin: 0;
+  color: red;
+  font-size: 25px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+
+
+
+}
+
+.close-button:hover {
+  background-color: rgb(186, 171, 171);
+}
+
+.callout {
+  margin-left: auto;
+  margin-right: auto;
+  /* padding-top: -2px;     */
+}
+
+/* ---------------------------------------------------------- */
+/* ---------------------------table--------------------------- */
+
+.mainAllExBlock {
+  display: grid;
+  height: 30px;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+.headAllex {
+  display: inline;
+  margin-right: 50px;
+  /* background-color: white; */
+}
+
+@media (max-width: 800px) {
+
+  .mainAllExBlock,
+  .tblAllEx,
+  .tblDataAllEx {
+    width: 310px;
+    overflow: hidden;
+  }
+
+  .FirstAllExRow,
+  .secondAllExRow {
+    width: 300px;
+    margin-bottom: 10px;
+    display: block;
+    position: relative;
+    /* overflow-x: scroll; */
+  }
+
+  .icon1AllEx {
+    position: absolute;
+    top: 0;
+    right: 50px;
+  }
+
+  .icon2AllEx {
+    position: absolute;
+    top: 0px;
+    right: 30px;
+  }
+
+  .icon3AllEx {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+  }
+
+  .serchAllExID {
+    width: 100px;
+  }
+  .mediaBottomMar{
+    margin-bottom: 20px;
+  }
+  .serchAllExID, .serchAllExbtn{
+    /* visibility: hidden; */
+    margin-top: 10px;
+    margin-left: 10px;
+
+  }
+  
+
+}
+
+.tblAllEx {
+  width: auto;
+  height: auto;
+  position: sticky;
+  background-color: rgb(253, 254, 255);
+  top: 0px;
+  border-bottom: 2px solid grey;
+  padding: 10px ;
+}
+
+.tblDataAllEx {
+  padding: 10px 20px;
+}
+
+.serchAllExID {
+  max-width: 200px;
+  border-radius: 10px;
+  text-align: center;
+  border: 2px solid rgb(122, 127, 127);
+  box-shadow: 1px 1px 10px rgb(224, 217, 217);
+
+}
+
+.serchAllExbtn {
+  width: 60px;
+  border-radius: 20px;
+  background-color: rgb(14, 14, 79);
+  color: rgb(255, 255, 255);
+  /* text-align: center; */
+  box-shadow: 1px 1px 10px rgb(217, 204, 204);
+  border: none;
+  font-weight: lighter;
+  
+  /* padding: 7px; */
+  
+
+}
+.scrollbar {
+  /* margin-left: 30px; */
+  float: left;
+  height: 250px;
+  width:100%;
+  background: rgb(255, 255, 255);
+  overflow-y: scroll;
+  margin-bottom: 5px;
+}
+
+.force-overflow {
+  min-height: 450px;
+}
+
+#style-6::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #F5F5F5;
+}
+
+#style-6::-webkit-scrollbar {
+  width: 10px;
+  background-color: #F5F5F5;
+}
+
+#style-6::-webkit-scrollbar-thumb {
+  background-color: #F90;
+  background-image: -webkit-linear-gradient(45deg,
+      rgba(255, 255, 255, .2) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(255, 255, 255, .2) 50%,
+      rgba(255, 255, 255, .2) 75%,
+      transparent 75%,
+      transparent)
+}
+
+.tableMargin{
+    margin-top:-80px;
+  }
+  @media only screen and (max-width: 500px) {
+    .tableMargin{
+      margin-top:40px;
+    }
+  }
+
+  /* --------------------------------------------------------- */
+  /* -------------------------calender------------------------ */
+
+  .calender {
+    margin: auto;
+  
+    background-color: #fff;
+    box-shadow: 0px 0px 15px 3px rgb(0, 0, 0, 0.1);
+  
+  
+  }
+  
+  .month {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    color: black;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-top: 1px solid gray;
+  
+  
+  }
+  
+  .weekends {
+    display: flex;
+    background-color: rgb(231, 227, 227);
+    color: black;
+    padding: 10px 0;
+  
+  
+  }
+  
+  .weekends div {
+    width: 14.28%;
+    text-align: center;
+  
+  
+  
+  }
+
+  .days {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-weight: 300;
+    padding-bottom: auto;
+    background-color: rgb(231, 227, 227);
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+  
+  .days div {
+    width: 14.28%;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    transition: all 0.4s;
+  
+  }
+  
+  .days div:hover {
+    background-color: #fff;
+    cursor: pointer;
+  
+  }
+  
+  .today {
+    background-color: #27ae60;
+    color: white;
+  }
+  
+  .prev_date {
+    color: #555;
+  }
+  
+  #month {
+    font: 30px;
+    font-weight: 500;
+  }
+  
+  .prev,
+  .next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(0, 0, 0, 0.1);
+    border-radius: 50%;
+    transition: all 0.4ms;
+  }
+  
+  .prev:hover,
+  .next:hover {
+  
+  
+    cursor: pointer;
+    background-color: orange;
+  }
+  
+  .close-button {
+    position: relative;
+    float: right;
+    display: inline;
+    margin: 25px;
+    color: red;
+    font-size: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
+  
+  .close-button:hover {
+    background-color: rgb(186, 171, 171);
+  }
+  
+  .callout {
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: 20px; */
+    }
+  
+  .d1 {
+    margin: 20px 20px;
+  
+  }
+/* --------------------------------------------------------- */
+/* -----------------------admission forms------------------ */
+
+#formInputName, #formFileName{
+  /* margin:10px; */
+  background-color: var(--input_color);
+  border-style: hidden;
+  border-bottom:2px solid darkblue;
+  border-radius: 10px;
+  width: 250px;
+  height: 40px;
+  padding: 10px;
+}
+#lblFormName{
+  display: block;
+  margin:10px 20px 0px 10px;
+  font-weight: larger;
+
+}
+.formBlock{
+  box-shadow: 1px 1px 5px rgb(172, 165, 165);
+}
+.headSection{
+  border-bottom: 1px solid gray ;
+  height: 50px;
+  position: relative;
+}
+
+.formCommonButton{
+  padding: 8px 30px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 50px;
+}
+.save_btn{
+  background-color: var(--saveBtnColor);
+  color: black;
+  margin-right: 10px;
+}
+.reset_btn{
+  background-color: var(--resetbtnColor);
+  color: white;
+}
+@media (max-width: 800px) {
+  .head_form{
+     margin-top: 18px;
+  }
+  
+}
+.Print_Btn{
+  border: none;
+  padding: 5px;
+  background-color: var(--resetbtnColor);
+  border-radius: 10px;
+  color: white;
+ }
+ .Upload_section{
+  border-bottom:2px solid darkblue;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 250px;
+  height: 60px;
+  padding-left: 30px;
+  background: var(--input_color);
+}
+.Upload_section:hover{
+  border: 1px solid rgb(97, 94, 94);
+}
+/* ---------------------------------------------------------- */
+/* -----------------------send message---------------------- */
+
+  body{
+    background-color: rgb(244, 242, 242);
+  }
+
+  .sendMessage{
+    box-shadow: 1px 1px 7px 1px grey;
+  }
+  .backColor{
+    border: none;
+    background-color: var(--input_color);
+  }
+  .selOption{
+    display: inline;
+  }
+
+  .iconPosi{
+    position: absolute;
+    right: 0;
+    top: 10px;
+  }
+  .errorMsg{
+    position: relative;
+  }
+  .msgAlert{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    color: grey;
+    text-align: center;
+    font-size: medium;
+  }
+  .errorBtn{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: red;
+  }
+  #title,
+  #recepient,
+  #comment{
+    background-color: var(--input_color);
+  }
+
+  /* -------------------------------------------------------------- */
+  /* ------------------------teacher details----------------------- */
+
+  .mainBlog {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 2px 3px 1px rgb(168, 168, 168);
+    /* margin-bottom: 10px; */
+    padding: 1px;
+  }
+  
+  .border_bottom_card_martin {
+    position: relative;
+    border-bottom: 1px solid rgb(201, 199, 199);
+  }
+  
+  .icon_div_right {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+  
+  .card_img {
+    padding-top: 10px;
+    width: 200px;
+    height: 200px;
+    /* margin-left: 7px; */
+  }
+  
+  .mainrow {
+    padding-top: 0px;
+  }
+  
+  .row_icon {
+    text-align: center;
+    float: right;
+  }
+
+  /* -------------------------------------------------------- */
+  /* -------------------------Attendence--------------------- */
+  .Teacher_Information_Blog {
+    background-color: #fafafa;
+    box-shadow: 2px 3px 4px 2px gray;
+    /* height: 100%; */
+
+}
+
+.Teacher_Information_heading {
+    border-bottom: 1px solid rgb(201, 199, 199);
+}
+
+/* --------------------------------------------------------------- */
+/* ------------------------management Card------------------------- */
+
+.cardInner {
+  position: relative;
+}
+
+.regiHead {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.regiNewDiv {
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+.cardDash {
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+  .cardImgDash {
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .card-deck {
+    margin-bottom: 30px;
+  }
+}
+/* -------------------dash table and summary--------------- */
+
+.tblBday{
+  text-align: center;
+ }
+ .tblBdayData{
+  padding-bottom: 10px;
+ }
+ .tblAllData{
+  padding-bottom: 10px;
+ }
+ .AttenSumm{
+  height: 250px;
+  box-shadow: 2px 2px 5px gray;
+ }
+ .headSumm{
+  height: 250px;
+  box-shadow: 2px 2px 5px gray;
+ }
+
+/*--------FeesCollection------------- */
+.scrollbarFeesCollection{
+  float: left;
+  height:575px;
+  width:100%;
+  background: rgb(255, 255, 255);
+  overflow-y: scroll;
+  margin-bottom: 5px;
+}
+.FeesCollection{
+  border-bottom: 2px solid black;
+  /* height:200px; */
+}
+.headFeesCollection{
+
+}
+.searchFeesCollectionID{
+  max-width: 150px;
+  border-radius: 20px;
+  text-align: center;
+  border: 1px solid rgb(178, 172, 172);
+  box-shadow: 1px 1px 10px rgb(224, 217, 217);
+}
+.searchFeesCollectionbtn{
+  border-radius: 15px;
+  background-color: darkblue;
+  color: white;
+}
+
+.cardimgTable {
+  width: 40px;
+  height:40px;
+  border-radius: 50%;
+}
+
+@media (max-width: 800px){
+  .headFeesCollection{
+     font-weight: 10px;
+     width: 200px;
+  }
+  .FeesCollection{
+    height:200px;
+  }
+  .buttonFeesCollection{
+    margin-left: 10px;
+    margin-top: 60px;
+  }
+  .searchFeesCollectionID{
+    margin-bottom: 10px;
+  }
+}
+
+/* -------------Button----------------- */
+.downBtn{
+  color: var(--Yellow);
+  margin-right: 5px;
+}
+.syncBtn{
+  color:var(--Blue);
+  margin-right: 5px;
+}
+.removeBtn{
+  color: var(--DarkRed);
+  margin-right: 5px;
+}
+.editBtn{
+  color: var(--DarkGreen);
+}
+.deleteBtn{
+  color: var(--DarkRed);
+}
+
+/* -------------radio button------------- */
+a:active{
+  background-color: #F90;
+  color: #F5F5F5;
+}

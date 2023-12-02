@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop Blog Page</title>
+    <!-- <link rel="stylesheet" href="./index.css"> -->
+    <style>
+
+     body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #98e1d6;
+    color: rgb(19, 16, 16);
+    text-align: center;
+}
+        #content {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 10px solid #1e1717;
+            border-width: 30px;
+        }
+        .draggable {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 5px solid #110909;
+            cursor: move;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <h1>My Blog</h1>
+        <div class="draggable" draggable="true" id="text-element">
+         <h4>This is my Dracd and drop Blog Page.</h4>
+        </div>
+        <div class="draggable" draggable="true" id="image-element">
+            <img width="320" height="240" src="/Images/istockphoto-1401980646-1024x1024.jpg" alt="Draggable Image">
+        </div>
+        <div class="draggable" draggable="true" id="video-element">
+            <video width="320" height="240" controls>
+                <source src="/Images/video.mp4" type="video/mp4">
+               .
+            </video>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for drag-and-drop functionality
+        const draggableElements = document.querySelectorAll('.draggable');
+        
+        draggableElements.forEach((element) => {
+            element.addEventListener('dragstart', (e) => {
+                e.dataTransfer.setData('text/plain', element.id);
+            });
+        });
+
+        const content = document.getElementById('content');
+
+        content.addEventListener('dragover', (e) => {
+            e.preventDefault();
+        });
+
+        content.addEventListener('drop', (e) => {
+            e.preventDefault();
+            const elementId = e.dataTransfer.getData('text/plain');
+            const element = document.getElementById(elementId);
+
+            if (element) {
+                content.appendChild(element.cloneNode(true));
+            }
+        });
+    </script>
+
+
+
+
+    <!-- <script>
+    
+      const draggableElements = document.querySelectorAll('.draggable');
+      const content = document.getElementById('content');
+
+      
+      const savedContent = localStorage.getItem('blogContent');
+      if (savedContent) {
+          content.innerHTML = savedContent;
+          initializeDraggableElements(); 
+      }
+
+      function initializeDraggableElements() {
+          draggableElements.forEach((element) => {
+              element.addEventListener('dragstart', (e) => {
+                  e.dataTransfer.setData('text/plain', element.id);
+              });
+          });
+
+          content.addEventListener('dragover', (e) => {
+              e.preventDefault();
+          });
+
+          content.addEventListener('drop', (e) => {
+              e.preventDefault();
+              const elementId = e.dataTransfer.getData('text/plain');
+              const element = document.getElementById(elementId);
+
+              if (element) {
+                  content.appendChild(element.cloneNode(true));
+                  saveContentToLocalStorage(); 
+                  initializeDraggableElements(); 
+              }
+          });
+      }
+
+      function saveContentToLocalStorage() {
+          localStorage.setItem('blogContent', content.innerHTML);
+      }
+
+      initializeDraggableElements(); 
+  </script> -->
+</body>
+</html>

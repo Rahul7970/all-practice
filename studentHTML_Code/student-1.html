@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>slider temp</title>
+  <link rel="stylesheet" href="./main_Navbar.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/esm/popper.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"> -->
+
+  <style>
+  </style>
+</head>
+
+<body>
+  <div class="page-wrapper chiller-theme toggled">
+    <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+      <i class="fas fa-bars"></i>
+    </a>
+    <nav id="sidebar" class="sidebar-wrapper">
+      <div class="sidebar-content">
+        <div class="sidebar-brand">
+          <a href="#">HTML Tutorial</a>
+          <div id="close-sidebar">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+        <div class="sidebar-header">
+          <div class="user-pic">
+            <img class="img-responsive img-rounded"
+              src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg"
+              alt="User picture">
+          </div>
+          <div class="user-info">
+            <span class="user-name">Jhon
+              <strong>Smith</strong>
+            </span>
+            <span class="user-role">Administrator</span>
+            <span class="user-status">
+              <i class="fa fa-circle"></i>
+              <span>Online</span>
+            </span>
+          </div>
+        </div>
+        <!-- sidebar-header  -->
+        <div class="sidebar-search">
+          <div>
+            <div class="input-group">
+              <input type="text" class="form-control search-menu" placeholder="Search...">
+              <div class="input-group-append">
+                <span class="input-group-text">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- sidebar-search  -->
+        <div class="sidebar-menu">
+          <ul>
+            <!-- <li class="header-menu">
+                  <span>General</span>
+                </li> -->
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-tachometer"></i>
+                <span>Dashboard</span>
+                <!-- <span class="badge badge-pill badge-warning">New</span> -->
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="admin.html">Admin</a>
+                  </li>
+                  <li>
+                    <a href="student.html">Student</a>
+                  </li>
+                  <li>
+                    <a href="Parent.html">Parent</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-shopping-cart"></i>
+                <span>Student</span>
+                <!-- <span class="badge badge-pill badge-danger">3</span> -->
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="#">All Student</a>
+                  </li>
+                  <li>
+                    <a href="#">Student Details</a>
+                  </li>
+                  <li>
+                    <a href="admit_form.html">Admit Form</a>
+                  </li>
+                  <li>
+                    <a href="student_promotion.html">Student Promotion</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-user"></i>
+                <span>Teachers</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="#">All Teachers</a>
+                  </li>
+                  <li>
+                    <a href="#">Teachers Details</a>
+                  </li>
+                  <li>
+                    <a href="add-teacher.html">Add Teachers</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-users"></i>
+                <span>Parent</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="#"></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-list-ul"></i>
+                <span>Library</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="#">All Books</a>
+                  </li>
+                  <li>
+                    <a href="add-book.html">Add Books</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-shield"></i>
+                <span>Account</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="fees-collection.html">Fees Collection</a>
+                  </li>
+                  <li>
+                    <a href="#">Create Student Payment</a>
+                  </li>
+                  <li>
+                    <a href="all-expense.html">All Expense</a>
+                  </li>
+                  <li>
+                    <a href="#">Add Expense</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-users"></i>
+                <span>Class</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="#">All Class</a>
+                  </li>
+                  <li>
+                    <a href="add-new-class.html">Add New Class</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-book"></i>
+                <span>Subject</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="#"></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-calendar"></i>
+                <span>Class Routine</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="#"></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-asterisk"></i>
+                <span>Attendence</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="#"></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-graduation-cap"></i>
+                <span>Exam</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="#">Exam Schedule</a>
+                  </li>
+                  <li>
+                    <a href="#">Exam Grades</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-truck"></i>
+                <span>Transport</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="#"></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-building"></i>
+                <span>Hostel</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="#"></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-exclamation-circle"></i>
+                <span>Notice</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="notice.html">Notice</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-commenting"></i>
+                <span>Message</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="send_message.html">Send Message</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-desktop"></i>
+                <span>UI Elements</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="#"></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-map-marker"></i>
+                <span>Map</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="#"></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-cog"></i>
+                <span>Account</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="#"></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- sidebar-wrapper  -->
+
+
+
+    <!-- content -->
+
+    <main class="page-content">
+      <div class="container-fluid">
+
+        <!-- keep ur all content from here -->
+        <!-- below is sample code -->
+        <div class="row mb-3">
+          <div class="col-lg-3">
+            <div class="p-3 mediaBottomMar" style="height: 100px; background-image:var(--facebook)">
+              <i class="fa-brands fa-facebook-f text-white" style="display: block;"></i>
+              <div class="bottomCard">
+                <h5 class="topCardText1">My follower on facebook</h5>
+              </div>
+              <span class="topCardText2">
+                30,000
+              </span>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="p-3 mediaBottomMar" style="height: 100px; background-image:var(--Twitter)">
+              <i class="fa-brands fa-twitter text-white" style="display: block;"></i>
+              <div class="bottomCard">
+                <h5 class="topCardText1">My follower on Twitter</h5>
+              </div>
+              <span class="topCardText2">
+                9000
+              </span>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="p-3 mediaBottomMar" style="height: 100px; background-image:var(--Red)">
+              <i class="fa-brands fa-google-plus text-white" style="display: block;"></i>
+              <div class="bottomCard">
+                <h5 class="topCardText1">My circuler on google plus</h5>
+              </div>
+              <span class="topCardText2">
+                13,000
+              </span>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="p-3 mediaBottomMar" style="height: 100px; background-image:var(--Linkedin);">
+              <i class="fa-brands fa-linkedin text-white" style="display: block;"></i>
+              <div class="bottomCard">
+                <h5 class="topCardText1">My follower on Linkedin</h5>
+              </div>
+              <span class="topCardText2">
+                18,000
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+
+            <div class="row">
+              <div class="col-lg">
+                <div class="mainBlock">
+                  <div class="col-lg">
+                    <div class="row border_bottom_card">
+                      <div class="headingBlock">
+                        <h4 class="heading">My children_01</h4>
+                      </div>
+                      <div class="logoblock">
+                        <i class="fa fa-angle-down fontcolor1"></i>
+                        <i class="fa fa-refresh fontcolor2"></i>
+                        <i class="fa fa-remove fontcolor3"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mainrow1">
+                    <div class="col-lg-4">
+                      <img class="cardimg"
+                        src="https://img.freepik.com/free-icon/man_318-188918.jpg?t=st=1671574144~exp=1671574744~hmac=fb4e940ce0dbe81df9b7299368aef9985a12cdd8fce88410d8880debbc4eae6c"
+                        alt="">
+                      <!-- <div class="row rowicon"> -->
+                      <div class="col-lg-4 img_botton_icon rowicon">
+                        <div><i class="fa fa-eye icon"></i></div>
+                        <div><i class="fa fa-file-pdf icon"></i></div>
+                        <div><i class="fa fa-download icon"></i></div>
+                        <div> <i class="fa fa-share-alt icon"></i></div>
+                      </div>
+                      <!-- </div> -->
+                    </div>
+                    <div class="col-lg-4">
+                      <table style="height: 450px;">
+                        <tr>
+                          <td>
+                            Name:
+                          </td>
+                          <td></td>
+                          <td>Ashuhasan</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Gender:
+                          </td>
+                          <td></td>
+                          <td>Female</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Fathername:
+                          </td>
+                          <td></td>
+                          <td>KaziFahimur Rahaman</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            MotherName:
+                          </td>
+                          <td></td>
+                          <td>Richi kon</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Date Of Birth:
+                          </td>
+                          <td></td>
+                          <td>29/11/1998</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Religion:
+                          </td>
+                          <td></td>
+                          <td>islam</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            FatherOccupation:
+                          </td>
+                          <td></td>
+                          <td>Businessman</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            E-mail:
+                          </td>
+                          <td></td>
+                          <td>richihasn@gmail.com</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            AdmissionDate:
+                          </td>
+                          <td></td>
+                          <td>05/04/2022</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Class:
+                          </td>
+                          <td></td>
+                          <td>2</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Section:
+                          </td>
+                          <td></td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Roll:
+                          </td>
+                          <td></td>
+                          <td>2901</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Address:
+                          </td>
+                          <td></td>
+                          <td>Ta701sydenys,Australia</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Phone:
+                          </td>
+                          <td></td>
+                          <td>+3421567893</td>
+                        </tr>
+                      </table>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+          <div class="col-lg-6">
+
+
+            <div class="row mb-1 ml-1 noticeBoard border" style="height:40%;width: 99%;">
+              <div class="col-lg-12">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <h5 style="">Notice Board</h5>
+                  </div>
+                  <div class="col-lg-4"></div>
+                  <div class="col-lg-4">
+                    <div style="position: absolute; top: 5px; right: 5px;">
+                      <i class="fas fa-angle-down mr-2" style="color: yellow;"></i>
+                      <i class="fas fa-sync mr-2" style="color: blue;"></i>
+                      <i class="fa fa-remove mr-2" style="color: red;"></i>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="scrollbarNotice" id="style-6">
+                      <div class="force-overflow">
+                        <div class="">
+                          <div>
+                            <p>16 may, 2017</p>
+                            <h5>jennefer</h5>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                              Nobis quas, corporis vitae
+                              explicabo voluptate expedita quam iste totam quo ipsa
+                              eligendi magni minima ex at
+                              perspiciatis reiciendis quae, fugit perferendis?</p>
+                          </div>
+                          <div>
+                            <p>16 may, 2017</p>
+                            <h5>jennefer</h5>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                              Nobis quas, corporis vitae
+                              explicabo voluptate expedita quam iste totam quo ipsa
+                              eligendi magni minima ex at
+                              perspiciatis reiciendis quae, fugit perferendis?</p>
+                          </div>
+                          <div>
+                            <p>16 may, 2017</p>
+                            <h5>jennefer</h5>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                              Nobis quas, corporis vitae
+                              explicabo voluptate expedita quam iste totam quo ipsa
+                              eligendi magni minima ex at
+                              perspiciatis reiciendis quae, fugit perferendis?</p>
+                          </div>
+                          <div>
+                            <p>16 may, 2017</p>
+                            <h5>jennefer</h5>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                              Nobis quas, corporis vitae
+                              explicabo voluptate expedita quam iste totam quo ipsa
+                              eligendi magni minima ex at
+                              perspiciatis reiciendis quae, fugit perferendis?</p>
+                          </div>
+                          <div>
+                            <p>16 may, 2017</p>
+                            <h5>jennefer</h5>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                              Nobis quas, corporis vitae
+                              explicabo voluptate expedita quam iste totam quo ipsa
+                              eligendi magni minima ex at
+                              perspiciatis reiciendis quae, fugit perferendis?</p>
+                          </div>
+                          <div>
+                            <p>16 may, 2017</p>
+                            <h5>jennefer</h5>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                              Nobis quas, corporis vitae
+                              explicabo voluptate expedita quam iste totam quo ipsa
+                              eligendi magni minima ex at
+                              perspiciatis reiciendis quae, fugit perferendis?</p>
+                          </div>
+                          <div>
+                            <p>16 may, 2017</p>
+                            <h5>jennefer</h5>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                              Nobis quas, corporis vitae
+                              explicabo voluptate expedita quam iste totam quo ipsa
+                              eligendi magni minima ex at
+                              perspiciatis reiciendis quae, fugit perferendis?</p>
+                          </div>
+                          <div>
+                            <p>16 may, 2017</p>
+                            <h5>jennefer</h5>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                              Nobis quas, corporis vitae
+                              explicabo voluptate expedita quam iste totam quo ipsa
+                              eligendi magni minima ex at
+                              perspiciatis reiciendis quae, fugit perferendis?</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-12 mt-2 ml-1 border noticeBoard" width=" 99%;">
+                <div class="row">
+                  <div class="col-lg-12 m-1">
+                    <h5 class="headAllex">All Expenses</h5>
+                    <input type="text" class="serchAllExID" placeholder="serch by ID ...">
+                    <input type="text" class="serchAllExID" placeholder="serch by Date ...">
+                    <button type="button" class="serchAllExbtn">search</button>
+                    <i class="fas fa-angle-down mr-1 icon1AllEx" style="color: yellow;"></i>
+                    <i class="fas fa-sync mr-1 icon2AllEx" style="color: blue;"></i>
+                    <i class="fas fa-remove  icon3AllEx" style="color: red;"></i>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="secondAllExRow col-lg-12 col-md-12 col-sm-12">
+                    <div class="scrollbar" id="style-6">
+                      <div class="force-overflow">
+                        <table class="">
+                          <thead class="">
+                            <th class="tblAllEx">ID No</th>
+                            <th class="tblAllEx" style="width: 150px;">Expense</th>
+                            <th class="tblAllEx">Amount</th>
+                            <th class="tblAllEx">Status</th>
+                            <th class="tblAllEx" style="width: 250px;">E-mail</th>
+                            <th class="tblAllEx">Date</th>
+                            <th class="tblAllEx">ID No</th>
+                            <th class="tblAllEx" style="width: 150px;">Expense</th>
+                            <th class="tblAllEx">Amount</th>
+                            <th class="tblAllEx">Status</th>
+                            <th class="tblAllEx" style="width: 250px;">E-mail</th>
+                            <th class="tblAllEx">Date</th>
+                            <th class="tblAllEx">ID No</th>
+                            <th class="tblAllEx" style="width: 150px;">Expense</th>
+                            <th class="tblAllEx">Amount</th>
+                            <th class="tblAllEx">Status</th>
+                            <th class="tblAllEx" style="width: 250px;">E-mail</th>
+                            <th class="tblAllEx">Date</th>
+                          </thead>
+                          <tbody class="">
+                            <div>
+                              <tr>
+                                <td class="tblDataAllEx">#3245</td>
+                                <td class="tblDataAllEx">salary</td>
+                                <td class="tblDataAllEx">$900</td>
+                                <td class="tblDataAllEx">paid</td>
+                                <td class="tblDataAllEx">Expenses@gmail.com</td>
+                                <td class="tblDataAllEx">21/12/12</td>
+                                <td class="tblDataAllEx">#3245</td>
+                                <td class="tblDataAllEx">salary</td>
+                                <td class="tblDataAllEx">$900</td>
+                                <td class="tblDataAllEx">paid</td>
+                                <td class="tblDataAllEx">Expenses@gmail.com</td>
+                                <td class="tblDataAllEx">21/12/12</td>
+                                <td class="tblDataAllEx">#3245</td>
+                                <td class="tblDataAllEx">salary</td>
+                                <td class="tblDataAllEx">$900</td>
+                                <td class="tblDataAllEx">paid</td>
+                                <td class="tblDataAllEx">Expenses@gmail.com</td>
+                                <td class="tblDataAllEx">21/12/12</td>
+                              </tr>
+                              <tr>
+                                <td class="tblDataAllEx">#3245</td>
+                                <td class="tblDataAllEx">salary</td>
+                                <td class="tblDataAllEx">$900</td>
+                                <td class="tblDataAllEx">paid</td>
+                                <td class="tblDataAllEx">Expenses@gmail.com</td>
+                                <td class="tblDataAllEx">21/12/12</td>
+                                <td class="tblDataAllEx">#3245</td>
+                                <td class="tblDataAllEx">salary</td>
+                                <td class="tblDataAllEx">$900</td>
+                                <td class="tblDataAllEx">paid</td>
+                                <td class="tblDataAllEx">Expenses@gmail.com</td>
+                                <td class="tblDataAllEx">21/12/12</td>
+                                <td class="tblDataAllEx">#3245</td>
+                                <td class="tblDataAllEx">salary</td>
+                                <td class="tblDataAllEx">$900</td>
+                                <td class="tblDataAllEx">paid</td>
+                                <td class="tblDataAllEx">Expenses@gmail.com</td>
+                                <td class="tblDataAllEx">21/12/12</td>
+                              </tr>
+                              <tr>
+                                <td class="tblDataAllEx">#3245</td>
+                                <td class="tblDataAllEx">salary</td>
+                                <td class="tblDataAllEx">$900</td>
+                                <td class="tblDataAllEx">paid</td>
+                                <td class="tblDataAllEx">Expenses@gmail.com</td>
+                                <td class="tblDataAllEx">21/12/12</td>
+                                <td class="tblDataAllEx">#3245</td>
+                                <td class="tblDataAllEx">salary</td>
+                                <td class="tblDataAllEx">$900</td>
+                                <td class="tblDataAllEx">paid</td>
+                                <td class="tblDataAllEx">Expenses@gmail.com</td>
+                                <td class="tblDataAllEx">21/12/12</td>
+                                <td class="tblDataAllEx">#3245</td>
+                                <td class="tblDataAllEx">salary</td>
+                                <td class="tblDataAllEx">$900</td>
+                                <td class="tblDataAllEx">paid</td>
+                                <td class="tblDataAllEx">Expenses@gmail.com</td>
+                                <td class="tblDataAllEx">21/12/12</td>
+                              </tr>
+                              <tr>
+                                <td class="tblDataAllEx">#3245</td>
+                                <td class="tblDataAllEx">salary</td>
+                                <td class="tblDataAllEx">$900</td>
+                                <td class="tblDataAllEx">paid</td>
+                                <td class="tblDataAllEx">Expenses@gmail.com</td>
+                                <td class="tblDataAllEx">21/12/12</td>
+                                <td class="tblDataAllEx">#3245</td>
+                                <td class="tblDataAllEx">salary</td>
+                                <td class="tblDataAllEx">$900</td>
+                                <td class="tblDataAllEx">paid</td>
+                                <td class="tblDataAllEx">Expenses@gmail.com</td>
+                                <td class="tblDataAllEx">21/12/12</td>
+                                <td class="tblDataAllEx">#3245</td>
+                                <td class="tblDataAllEx">salary</td>
+                                <td class="tblDataAllEx">$900</td>
+                                <td class="tblDataAllEx">paid</td>
+                                <td class="tblDataAllEx">Expenses@gmail.com</td>
+                                <td class="tblDataAllEx">21/12/12</td>
+                              </tr>
+                              <tr>
+                                <td class="tblDataAllEx">#3245</td>
+                                <td class="tblDataAllEx">salary</td>
+                                <td class="tblDataAllEx">$900</td>
+                                <td class="tblDataAllEx">paid</td>
+                                <td class="tblDataAllEx">Expenses@gmail.com</td>
+                                <td class="tblDataAllEx">21/12/12</td>
+                                <td class="tblDataAllEx">#3245</td>
+                                <td class="tblDataAllEx">salary</td>
+                                <td class="tblDataAllEx">$900</td>
+                                <td class="tblDataAllEx">paid</td>
+                                <td class="tblDataAllEx">Expenses@gmail.com</td>
+                                <td class="tblDataAllEx">21/12/12</td>
+                                <td class="tblDataAllEx">#3245</td>
+                                <td class="tblDataAllEx">salary</td>
+                                <td class="tblDataAllEx">$900</td>
+                                <td class="tblDataAllEx">paid</td>
+                                <td class="tblDataAllEx">Expenses@gmail.com</td>
+                                <td class="tblDataAllEx">21/12/12</td>
+                              </tr>
+                              <tr>
+                                <td class="tblDataAllEx">#3245</td>
+                                <td class="tblDataAllEx">salary</td>
+                                <td class="tblDataAllEx">$900</td>
+                                <td class="tblDataAllEx">paid</td>
+                                <td class="tblDataAllEx">Expenses@gmail.com</td>
+                                <td class="tblDataAllEx">21/12/12</td>
+                                <td class="tblDataAllEx">#3245</td>
+                                <td class="tblDataAllEx">salary</td>
+                                <td class="tblDataAllEx">$900</td>
+                                <td class="tblDataAllEx">paid</td>
+                                <td class="tblDataAllEx">Expenses@gmail.com</td>
+                                <td class="tblDataAllEx">21/12/12</td>
+                                <td class="tblDataAllEx">#3245</td>
+                                <td class="tblDataAllEx">salary</td>
+                                <td class="tblDataAllEx">$900</td>
+                                <td class="tblDataAllEx">paid</td>
+                                <td class="tblDataAllEx">Expenses@gmail.com</td>
+                                <td class="tblDataAllEx">21/12/12</td>
+                              </tr>
+                              <tr>
+                                <td class="tblDataAllEx">#3245</td>
+                                <td class="tblDataAllEx">salary</td>
+                                <td class="tblDataAllEx">$900</td>
+                                <td class="tblDataAllEx">paid</td>
+                                <td class="tblDataAllEx">Expenses@gmail.com</td>
+                                <td class="tblDataAllEx">21/12/12</td>
+                                <td class="tblDataAllEx">#3245</td>
+                                <td class="tblDataAllEx">salary</td>
+                                <td class="tblDataAllEx">$900</td>
+                                <td class="tblDataAllEx">paid</td>
+                                <td class="tblDataAllEx">Expenses@gmail.com</td>
+                                <td class="tblDataAllEx">21/12/12</td>
+                                <td class="tblDataAllEx">#3245</td>
+                                <td class="tblDataAllEx">salary</td>
+                                <td class="tblDataAllEx">$900</td>
+                                <td class="tblDataAllEx">paid</td>
+                                <td class="tblDataAllEx">Expenses@gmail.com</td>
+                                <td class="tblDataAllEx">21/12/12</td>
+                              </tr>
+                              <tr>
+                                <td class="tblDataAllEx">#3245</td>
+                                <td class="tblDataAllEx">salary</td>
+                                <td class="tblDataAllEx">$900</td>
+                                <td class="tblDataAllEx">paid</td>
+                                <td class="tblDataAllEx">Expenses@gmail.com</td>
+                                <td class="tblDataAllEx">21/12/12</td>
+                                <td class="tblDataAllEx">#3245</td>
+                                <td class="tblDataAllEx">salary</td>
+                                <td class="tblDataAllEx">$900</td>
+                                <td class="tblDataAllEx">paid</td>
+                                <td class="tblDataAllEx">Expenses@gmail.com</td>
+                                <td class="tblDataAllEx">21/12/12</td>
+                                <td class="tblDataAllEx">#3245</td>
+                                <td class="tblDataAllEx">salary</td>
+                                <td class="tblDataAllEx">$900</td>
+                                <td class="tblDataAllEx">paid</td>
+                                <td class="tblDataAllEx">Expenses@gmail.com</td>
+                                <td class="tblDataAllEx">21/12/12</td>
+                              </tr>
+                              <tr>
+                                <td class="tblDataAllEx">#3245</td>
+                                <td class="tblDataAllEx">salary</td>
+                                <td class="tblDataAllEx">$900</td>
+                                <td class="tblDataAllEx">paid</td>
+                                <td class="tblDataAllEx">Expenses@gmail.com</td>
+                                <td class="tblDataAllEx">21/12/12</td>
+                                <td class="tblDataAllEx">#3245</td>
+                                <td class="tblDataAllEx">salary</td>
+                                <td class="tblDataAllEx">$900</td>
+                                <td class="tblDataAllEx">paid</td>
+                                <td class="tblDataAllEx">Expenses@gmail.com</td>
+                                <td class="tblDataAllEx">21/12/12</td>
+                                <td class="tblDataAllEx">#3245</td>
+                                <td class="tblDataAllEx">salary</td>
+                                <td class="tblDataAllEx">$900</td>
+                                <td class="tblDataAllEx">paid</td>
+                                <td class="tblDataAllEx">Expenses@gmail.com</td>
+                                <td class="tblDataAllEx">21/12/12</td>
+                              </tr>
+                              <tr>
+                                <td class="tblDataAllEx">#3245</td>
+                                <td class="tblDataAllEx">salary</td>
+                                <td class="tblDataAllEx">$900</td>
+                                <td class="tblDataAllEx">paid</td>
+                                <td class="tblDataAllEx">Expenses@gmail.com</td>
+                                <td class="tblDataAllEx">21/12/12</td>
+                                <td class="tblDataAllEx">#3245</td>
+                                <td class="tblDataAllEx">salary</td>
+                                <td class="tblDataAllEx">$900</td>
+                                <td class="tblDataAllEx">paid</td>
+                                <td class="tblDataAllEx">Expenses@gmail.com</td>
+                                <td class="tblDataAllEx">21/12/12</td>
+                                <td class="tblDataAllEx">#3245</td>
+                                <td class="tblDataAllEx">salary</td>
+                                <td class="tblDataAllEx">$900</td>
+                                <td class="tblDataAllEx">paid</td>
+                                <td class="tblDataAllEx">Expenses@gmail.com</td>
+                                <td class="tblDataAllEx">21/12/12</td>
+                              </tr>
+                              <tr>
+                                <td class="tblDataAllEx">#3245</td>
+                                <td class="tblDataAllEx">salary</td>
+                                <td class="tblDataAllEx">$900</td>
+                                <td class="tblDataAllEx">paid</td>
+                                <td class="tblDataAllEx">Expenses@gmail.com</td>
+                                <td class="tblDataAllEx">21/12/12</td>
+                                <td class="tblDataAllEx">#3245</td>
+                                <td class="tblDataAllEx">salary</td>
+                                <td class="tblDataAllEx">$900</td>
+                                <td class="tblDataAllEx">paid</td>
+                                <td class="tblDataAllEx">Expenses@gmail.com</td>
+                                <td class="tblDataAllEx">21/12/12</td>
+                                <td class="tblDataAllEx">#3245</td>
+                                <td class="tblDataAllEx">salary</td>
+                                <td class="tblDataAllEx">$900</td>
+                                <td class="tblDataAllEx">paid</td>
+                                <td class="tblDataAllEx">Expenses@gmail.com</td>
+                                <td class="tblDataAllEx">21/12/12</td>
+                              </tr>
+                              <tr>
+                                <td class="tblDataAllEx">#3245</td>
+                                <td class="tblDataAllEx">salary</td>
+                                <td class="tblDataAllEx">$900</td>
+                                <td class="tblDataAllEx">paid</td>
+                                <td class="tblDataAllEx">Expenses@gmail.com</td>
+                                <td class="tblDataAllEx">21/12/12</td>
+                                <td class="tblDataAllEx">#3245</td>
+                                <td class="tblDataAllEx">salary</td>
+                                <td class="tblDataAllEx">$900</td>
+                                <td class="tblDataAllEx">paid</td>
+                                <td class="tblDataAllEx">Expenses@gmail.com</td>
+                                <td class="tblDataAllEx">21/12/12</td>
+                                <td class="tblDataAllEx">#3245</td>
+                                <td class="tblDataAllEx">salary</td>
+                                <td class="tblDataAllEx">$900</td>
+                                <td class="tblDataAllEx">paid</td>
+                                <td class="tblDataAllEx">Expenses@gmail.com</td>
+                                <td class="tblDataAllEx">21/12/12</td>
+                              </tr>
+                              <tr>
+                                <td class="tblDataAllEx">#3245</td>
+                                <td class="tblDataAllEx">salary</td>
+                                <td class="tblDataAllEx">$900</td>
+                                <td class="tblDataAllEx">paid</td>
+                                <td class="tblDataAllEx">Expenses@gmail.com</td>
+                                <td class="tblDataAllEx">21/12/12</td>
+                                <td class="tblDataAllEx">#3245</td>
+                                <td class="tblDataAllEx">salary</td>
+                                <td class="tblDataAllEx">$900</td>
+                                <td class="tblDataAllEx">paid</td>
+                                <td class="tblDataAllEx">Expenses@gmail.com</td>
+                                <td class="tblDataAllEx">21/12/12</td>
+                                <td class="tblDataAllEx">#3245</td>
+                                <td class="tblDataAllEx">salary</td>
+                                <td class="tblDataAllEx">$900</td>
+                                <td class="tblDataAllEx">paid</td>
+                                <td class="tblDataAllEx">Expenses@gmail.com</td>
+                                <td class="tblDataAllEx">21/12/12</td>
+                              </tr>
+                              <tr>
+                                <td class="tblDataAllEx">#3245</td>
+                                <td class="tblDataAllEx">salary</td>
+                                <td class="tblDataAllEx">$900</td>
+                                <td class="tblDataAllEx">paid</td>
+                                <td class="tblDataAllEx">Expenses@gmail.com</td>
+                                <td class="tblDataAllEx">21/12/12</td>
+                                <td class="tblDataAllEx">#3245</td>
+                                <td class="tblDataAllEx">salary</td>
+                                <td class="tblDataAllEx">$900</td>
+                                <td class="tblDataAllEx">paid</td>
+                                <td class="tblDataAllEx">Expenses@gmail.com</td>
+                                <td class="tblDataAllEx">21/12/12</td>
+                                <td class="tblDataAllEx">#3245</td>
+                                <td class="tblDataAllEx">salary</td>
+                                <td class="tblDataAllEx">$900</td>
+                                <td class="tblDataAllEx">paid</td>
+                                <td class="tblDataAllEx">Expenses@gmail.com</td>
+                                <td class="tblDataAllEx">21/12/12</td>
+                              </tr>
+                            </div>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-lg-3">
+            <div class="p-3 mediaBottomMar" style="height: 100px; background-image:var(--facebook)">
+              <i class="fa-brands fa-facebook-f text-white" style="display: block;"></i>
+              <div class="bottomCard">
+                <h5 class="topCardText1">My follower on facebook</h5>
+              </div>
+              <span class="topCardText2">
+                30,000
+              </span>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="p-3 mediaBottomMar" style="height: 100px; background-image:var(--Twitter)">
+              <i class="fa-brands fa-twitter text-white" style="display: block;"></i>
+              <div class="bottomCard">
+                <h5 class="topCardText1">My follower on Twitter</h5>
+              </div>
+              <span class="topCardText2">
+                9000
+              </span>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="p-3 mediaBottomMar" style="height: 100px; background-image:var(--Red)">
+              <i class="fa-brands fa-google-plus text-white" style="display: block;"></i>
+              <div class="bottomCard">
+                <h5 class="topCardText1">My circuler on google plus</h5>
+              </div>
+              <span class="topCardText2">
+                13,000
+              </span>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="p-3 mediaBottomMar" style="height: 100px; background-image:var(--Linkedin);">
+              <i class="fa-brands fa-linkedin text-white" style="display: block;"></i>
+              <div class="bottomCard">
+                <h5 class="topCardText1">My follower on Linkedin</h5>
+              </div>
+              <span class="topCardText2">
+                18,000
+              </span>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- keep ur all content from here -->
+
+      </div>
+    </main>
+    <!-- page-content" -->
+
+
+
+  </div>
+  <!-- page-wrapper -->
+
+  <script>
+    $(".sidebar-dropdown > a").click(function () {
+      $(".sidebar-submenu").slideUp(200);
+      if (
+        $(this)
+          .parent()
+          .hasClass("active")
+      ) {
+        $(".sidebar-dropdown").removeClass("active");
+        $(this)
+          .parent()
+          .removeClass("active");
+      } else {
+        $(".sidebar-dropdown").removeClass("active");
+        $(this)
+          .next(".sidebar-submenu")
+          .slideDown(200);
+        $(this)
+          .parent()
+          .addClass("active");
+      }
+    });
+
+    $("#close-sidebar").click(function () {
+      $(".page-wrapper").removeClass("toggled");
+    });
+    $("#show-sidebar").click(function () {
+      $(".page-wrapper").addClass("toggled");
+    });
+  </script>
+</body>
+
+</html>
